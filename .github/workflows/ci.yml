@@ -1,5 +1,4 @@
 name: CI React Check
-
 on:
 
   push:
@@ -18,15 +17,15 @@ jobs:
     - name: 1. Descargar el código del repositorio
       uses: actions/checkout@v4
 
-    - name: 2. Configurar Node.js
+    - name: 2. Configurar Node.js (necesario para Vite/React)
       uses: actions/setup-node@v4
 
       with:
-        node-version: 22
+        node-version: 18
         cache: 'npm'
 
     - name: 3. Instalar dependencias del proyecto
       run: npm install
-
+      
     - name: 4. Comprobar que el proyecto compila correctamente
       run: npm run build
