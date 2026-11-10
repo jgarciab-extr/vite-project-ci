@@ -71,4 +71,13 @@ export function Navbar() {
     nav.append(brand, ul, burgerBtn);
 
     return nav;
+
+    function App() {
+  const variableInutil = "esto va a hacer saltar el linter";
+  return (
+    <div>
+      <h1>Hola Mundo</h1>
+    </div>
+  );
+}
 }

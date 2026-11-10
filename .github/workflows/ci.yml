@@ -26,6 +26,9 @@ jobs:
 
     - name: 3. Instalar dependencias del proyectooo
       run: npm install
+
+    - name: Ejecutar Linter
+      run: npm run lint
       
     - name: 4. Comprobar que el proyecto compila correctamente
       run: npm run build
