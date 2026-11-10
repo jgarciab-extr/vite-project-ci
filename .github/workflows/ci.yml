@@ -24,7 +24,7 @@ jobs:
         node-version: 22
         cache: 'npm'
 
-    - name: 3. Instalar dependencias del proyecto
+    - name: 3. Instalar dependencias del proyectooo
       run: npm install
       
     - name: 4. Comprobar que el proyecto compila correctamente
